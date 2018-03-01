@@ -22,8 +22,5 @@ end
 
 # "2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"
 def valid_phone_number?(phone)
-  if phone.scan(/[0-9]/).count == 10
-    true
-  else false
-  end
+  phone.scan(/[0-9]/).count == 10 ? true : false
 end
